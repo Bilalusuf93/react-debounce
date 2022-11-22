@@ -1,0 +1,54 @@
+.debounce-container {
+	width: 100%;
+	align-items: center;
+
+	&__heading {
+		font-weight: bold;
+		font-size: 28px;
+
+		span {
+			font-weight: 300;
+			font-size: 17px;
+		}
+	}
+
+	&__searchbox {
+		margin: 10px;
+
+		&-input {
+			width: 200px;
+			border-radius: 15px;
+			padding: 14px 16px 14px 16px;
+			font-size: 18px;
+		}
+	}
+
+	&__card {
+		margin: 10px;
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		&-items {
+			min-height: 400px;
+			margin: 5px;
+		}
+	}
+}
+
+.skeleton {
+	animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: hsl(200, 20%, 80%);
+	}
+
+	100% {
+		background-color: hsl(200, 20%, 95%);
+	}
+}
